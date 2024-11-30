@@ -1,0 +1,55 @@
+.side-navbar {
+    width: 250px;
+    height: calc(100vh - 70px); /* Full height minus the main navbar height */
+    position: fixed;
+    top: 70px; /* Below the main navbar */
+    left: 0;
+    background-color: rgba(45, 52, 54); /* Dark grey with 80% opacity */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .side-navbar-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    text-align: center; /* Center the title */
+    margin-bottom: 30px;
+  }
+  
+  .side-navbar-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .side-navbar-link {
+    display: block;
+    text-decoration: none; /* No underline */
+    color: #dfe6e9; /* Light grey text */
+    font-size: 1.2rem;
+    padding: 12px 15px;
+    margin-bottom: 15px; /* Space between links */
+    border-radius: 8px; /* Smooth rounded edges */
+    background-color: rgba(99, 110, 114, 0.7); /* Subtle grey with transparency */
+    text-align: center; /* Center text inside the links */
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .side-navbar-link:hover {
+    background-color: #00cec9; /* Teal background on hover */
+    color: #ffffff; /* White text on hover */
+    transform: translateX(5px); /* Slight shift to the right on hover */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Shadow for hover effect */
+  }
+  
+  .main-content {
+    margin-left: 250px; /* Shifts the content to the right to accommodate the sidebar */
+    transition: margin-left 0.3s ease; /* Smooth transition when the sidebar opens/closes */
+    padding: 20px;
+  }
+  
+  .side-navbar.open + .main-content {
+    margin-left: 0; /* If the sidebar is closed, return the content to the original position */
+  }
+  

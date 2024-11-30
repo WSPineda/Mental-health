@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .main-content {
+    margin-left: 250px; /* Shifts the content to the right to accommodate the sidebar */
+    transition: margin-left 0.3s ease; /* Smooth transition when the sidebar opens/closes */
+    padding: 20px;
+  }
+  
+  .side-navbar.open + .main-content {
+    margin-left: 0; /* If the sidebar is closed, return the content to the original position */
+  }
+  
+  
