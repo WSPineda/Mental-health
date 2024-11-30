@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './nav.css'; // Ensure this is your CSS file for styling
 
 const Nav = () => {
+  
   return (
     <nav className="main-navbar">
       <ul className="nav-list">
@@ -18,9 +19,13 @@ const Nav = () => {
         <li>
           <Link to="/contact-us" className="main-nav-link">Contact Us</Link>
         </li>
+        <li>
+          <Link to="/guided-exercises" className="main-nav-link">Guided Exercises</Link>
+        </li>
       </ul>
     </nav>
   );
+  
 };
 
 export default Nav;

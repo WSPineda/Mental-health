@@ -1,21 +1,76 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fdf9f3; /* Soft off-white background for a soothing feel */
+  color: #333; /* Dark grey text for readability */
 }
 
 .home-container {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-  
-  .main-content {
-    margin-left: 250px; /* Shifts the content to the right to accommodate the sidebar */
-    transition: margin-left 0.3s ease; /* Smooth transition when the sidebar opens/closes */
-    padding: 20px;
-  }
-  
-  .side-navbar.open + .main-content {
-    margin-left: 0; /* If the sidebar is closed, return the content to the original position */
-  }
-  
-  
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #ffffff; /* Clean white container background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a polished look */
+  border-radius: 10px; /* Rounded corners for a modern design */
+}
+
+.main-content {
+  margin-left: 250px; /* Shift content to accommodate the sidebar */
+  transition: margin-left 0.3s ease; /* Smooth transition */
+  padding: 20px;
+  background: #fafafa; /* Light grey background for content area */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Gentle shadow for depth */
+}
+
+.side-navbar.open + .main-content {
+  margin-left: 0; /* Reset content margin when sidebar is closed */
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: #2d3436; /* Darker grey for headings */
+}
+
+p {
+  line-height: 1.6; /* Better readability with increased line height */
+  color: #636e72; /* Muted grey for paragraph text */
+}
+
+/* Buttons */
+button {
+  background: #74b9ff; /* Soft blue */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s; /* Smooth transition effects */
+}
+
+button:hover {
+  background: #00cec9; /* Teal hover effect */
+  transform: scale(1.05); /* Slight scaling for interactivity */
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #74b9ff; /* Soft blue for links */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00cec9; /* Teal hover effect for links */
+}
+
+/* Global Utilities */
+.container {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

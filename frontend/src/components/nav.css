@@ -1,40 +1,50 @@
 .main-navbar {
-    background-color: #74b9ff; 
+  background: linear-gradient(to right, #a8edea, #fed6e3); /* Pastel gradient for a calming header */
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+}
 
- 
-    display: flex;
-    justify-content: center;
-  }
-  .nav-list {
-    list-style: none;
-    display: flex;
-    gap: 30px; /* Increase spacing between links */
-  }
-  
-  .nav-list li a {
-    text-decoration: none;
-     color: #dfe6e9;
-    font-weight: bold;
-    font-size: 1.2rem; /* Make the text larger */
-    padding: 10px 15px; /* Add padding to links for a larger clickable area */
-    transition: all 0.3s ease; /* Smooth hover effect */
-  }
-  
-  .nav-list li a:hover {
-    color: #fff; /* Change text color on hover */
-    background-color: #00cec9; /* Teal background on hover */
-    border-radius: 5px; /* Rounded corners for hover effect */
-    transform: scale(1.1); /* Slightly enlarge the link on hover */
-  }
-  
-  .main-nav-link {
-    display: block;
-    text-decoration: none; /* No underline */
-    color: #dfe6e9; /* Light grey text */
-    font-size: 1.2rem;
-    padding: 12px 15px;
-    margin-bottom: 15px; /* Space between links */
-    border-radius: 8px; /* Smooth rounded edges */
-    text-align: center; /* Center text inside the links */
-    transition: all 0.3s ease; /* Smooth hover effect */
-  }
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Spacing between links */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Dark grey text for better contrast */
+  font-weight: bold;
+  font-size: 1.2rem; /* Slightly larger text */
+  padding: 10px 15px; /* Increase padding for a larger clickable area */
+  border-radius: 5px; /* Rounded corners for links */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-list li a:hover {
+  color: #ffffff; /* White text on hover */
+  background: #00cec9; /* Teal hover background */
+  transform: scale(1.1); /* Slightly enlarge link on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.main-nav-link {
+  display: block;
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Consistent dark grey for links */
+  font-size: 1.2rem;
+  padding: 12px 15px;
+  border-radius: 8px; /* Smooth rounded edges */
+  text-align: center;
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Focus Styles for Accessibility */
+.nav-list li a:focus {
+  outline: 3px solid #00cec9; /* Teal outline for focused links */
+  outline-offset: 2px;
+}
