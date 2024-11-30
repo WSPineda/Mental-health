@@ -4,7 +4,7 @@
     position: fixed;
     top: 70px; /* Below the main navbar */
     left: 0;
-    background-color: rgba(45, 52, 54); /* Dark grey with 80% opacity */
+    background-color: #74b9ff; /* Dark grey with 80% opacity */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     box-sizing: border-box;

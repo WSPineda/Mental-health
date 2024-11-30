@@ -6,7 +6,7 @@
   }
   
   header.hero-section {
-    background: #74b9ff; /* Light blue */
+    background-color: #00cec9; /* Teal background on hover */
     color: white;
     text-align: center;
     padding: 50px 20px;
