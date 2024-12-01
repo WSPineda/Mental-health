@@ -1,24 +1,23 @@
 .side-navbar {
   width: 250px;
-  height: calc(100vh - 70px); /* Full height minus the main navbar height */
+  height: calc(100vh - 70px); /* Full height minus main navbar height */
   position: fixed;
   top: 70px; /* Below the main navbar */
   left: 0;
-  background: linear-gradient(to bottom, #a8edea, #fed6e3); /* Pastel gradient background */
+  background: linear-gradient(to bottom, #a8edea, #fed6e3); /* Pastel gradient */
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   padding: 20px;
   box-sizing: border-box;
-  border-radius: 0 10px 10px 0; /* Rounded edges on the right side */
 }
 
 .side-navbar-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #2d3436; /* Dark grey text for contrast */
   text-align: center;
   margin-bottom: 30px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #74b9ff; /* Accent line under the title */
+  border-bottom: 2px solid #74b9ff; /* Accent underline */
 }
 
 .side-navbar-list {
@@ -30,7 +29,7 @@
 .side-navbar-link {
   display: block;
   text-decoration: none; /* No underline */
-  color: #34495e; /* Darker grey text for readability */
+  color: #34495e; /* Dark grey text for readability */
   font-size: 1.2rem;
   font-weight: 500;
   padding: 12px 15px;
@@ -45,31 +44,13 @@
 .side-navbar-link:hover {
   background-color: #00cec9; /* Teal hover background */
   color: #ffffff; /* White text on hover */
-  transform: translateX(10px); /* More noticeable shift to the right on hover */
+  transform: translateX(10px); /* Slight shift to the right on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
-.side-navbar-link:focus {
-  outline: 3px solid #00cec9; /* Teal outline for focused links */
-  outline-offset: 2px;
-}
-
-.main-content {
-  margin-left: 250px; /* Shifts the content to the right to accommodate the sidebar */
-  transition: margin-left 0.3s ease; /* Smooth transition when the sidebar opens/closes */
-  padding: 20px;
-  background: #fdf9f3; /* Soft off-white background for main content */
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.side-navbar.open + .main-content {
-  margin-left: 0; /* If the sidebar is closed, return the content to the original position */
-}
-
-/* Accessibility and Focus Styles */
-.side-navbar-link:focus {
-  outline: 2px solid #0984e3; /* Bright blue focus outline */
-  background-color: #74b9ff; /* Subtle highlight for focused link */
+.side-navbar-link.active {
+  background-color: #0984e3; /* Highlight active link */
   color: #ffffff;
+  transform: none; /* Prevent hover animation on active links */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }

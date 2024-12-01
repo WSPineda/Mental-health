@@ -1,0 +1,48 @@
+.example-help-container {
+    font-family: Arial, sans-serif;
+    color: #2d3436;
+    padding: 20px;
+    text-align: center;
+    background: #fdf9f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .example-help-container h1 {
+    font-size: 2rem;
+    color: #0984e3;
+    margin-bottom: 15px;
+  }
+  
+  .example-help-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .example-link-button {
+    display: inline-block;
+    background: #74b9ff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .example-link-button:hover {
+    background: #00cec9;
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .example-link-button:focus {
+    outline: 2px solid #0984e3;
+    outline-offset: 2px;
+  }
+  

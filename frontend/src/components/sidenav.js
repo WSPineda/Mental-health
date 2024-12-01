@@ -1,5 +1,6 @@
 import React from 'react';
-import './sidenav.css'; // CSS for styling the side navigation
+import { NavLink } from 'react-router-dom';
+import './sidenav.css';
 
 const SideNav = () => {
   return (
@@ -7,16 +8,44 @@ const SideNav = () => {
       <h3 className="side-navbar-title">Get Help</h3>
       <ul className="side-navbar-list">
         <li>
-          <a href="/national-helpline" className="side-navbar-link">National Helpline</a>
+          <NavLink
+            to="/national-helpline"
+            className={({ isActive }) =>
+              isActive ? 'side-navbar-link active' : 'side-navbar-link'
+            }
+          >
+            National Helpline
+          </NavLink>
         </li>
         <li>
-          <a href="/disaster-distress-helpline" className="side-navbar-link">Disaster Distress Helpline</a>
+          <NavLink
+            to="/disaster-distress-helpline"
+            className={({ isActive }) =>
+              isActive ? 'side-navbar-link active' : 'side-navbar-link'
+            }
+          >
+            Disaster Distress Helpline
+          </NavLink>
         </li>
         <li>
-          <a href="/suicide-crisis-helpline" className="side-navbar-link">Suicide Crisis Helpline</a>
+          <NavLink
+            to="/suicide-crisis-helpline"
+            className={({ isActive }) =>
+              isActive ? 'side-navbar-link active' : 'side-navbar-link'
+            }
+          >
+            Suicide Crisis Helpline
+          </NavLink>
         </li>
         <li>
-          <a href="/example-help=website" className="side-navbar-link">Example Help Website</a>
+          <NavLink
+            to="/example-help-website"
+            className={({ isActive }) =>
+              isActive ? 'side-navbar-link active' : 'side-navbar-link'
+            }
+          >
+            Example Help Website
+          </NavLink>
         </li>
       </ul>
     </div>
