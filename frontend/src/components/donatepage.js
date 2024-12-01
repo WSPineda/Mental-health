@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./donatepage.css";
 
 const Donate = () => {
+  const [totalDonations, setTotalDonations] = useState(0);
+
+  const handleDonation = (e) => {
+    e.preventDefault();
+    const donation = parseFloat(e.target.amount.value);
+    if (!isNaN(donation)) {
+      setTotalDonations((prev) => prev + donation);
+      e.target.reset();
+    }
+  };
+
   return (
     <div className="donate-container">
       <header className="donate-header">
@@ -10,7 +21,7 @@ const Donate = () => {
       </header>
       <section className="donation-section">
         <h2>Make a Donation</h2>
-        <form className="donation-form">
+        <form className="donation-form" onSubmit={handleDonation}>
           <label htmlFor="name">Full Name</label>
           <input type="text" id="name" name="name" placeholder="Enter your name" required />
 
@@ -22,6 +33,7 @@ const Donate = () => {
 
           <button type="submit" className="donate-button">Donate Now</button>
         </form>
+        <p>Total Donations: ${totalDonations.toFixed(2)}</p>
       </section>
     </div>
   );

@@ -74,3 +74,41 @@ a:hover {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #74b9ff;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+button {
+  background: #74b9ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00cec9;
+}
+
+.thank-you-message {
+  text-align: center;
+  padding: 20px;
+  color: #2d3436;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+

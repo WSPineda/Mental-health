@@ -91,4 +91,49 @@
     background: #00cec9; /* Teal hover */
     transform: scale(1.05); /* Slight scaling effect */
   }
+
+  .contact-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #fdf9f3;
+    color: #2d3436;
+  }
+  
+  .contact-header {
+    text-align: center;
+    background: linear-gradient(to right, #a8edea, #fed6e3);
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #00cec9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 206, 201, 0.5);
+  }
+  
+  .contact-button {
+    background: #74b9ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-button:hover {
+    background: #00cec9;
+  }
   
