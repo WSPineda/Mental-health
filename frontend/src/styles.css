@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background: #fdf9f3; /* Soft off-white background for a soothing feel */
+  background: #ffffff; /* Soft off-white background for a soothing feel */
   color: #333; /* Dark grey text for readability */
 }
 
@@ -35,23 +35,6 @@ h1, h2, h3 {
 p {
   line-height: 1.6; /* Better readability with increased line height */
   color: #636e72; /* Muted grey for paragraph text */
-}
-
-/* Buttons */
-button {
-  background: #74b9ff; /* Soft blue */
-  color: #ffffff; /* White text */
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.2s; /* Smooth transition effects */
-}
-
-button:hover {
-  background: #00cec9; /* Teal hover effect */
-  transform: scale(1.05); /* Slight scaling for interactivity */
 }
 
 /* Links */
@@ -90,20 +73,6 @@ a:hover {
   top: 10px;
 }
 
-button {
-  background: #74b9ff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #00cec9;
-}
-
 .thank-you-message {
   text-align: center;
   padding: 20px;
@@ -111,4 +80,3 @@ button:hover {
   background: #f1f1f1;
   border-radius: 10px;
 }
-

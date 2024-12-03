@@ -2,76 +2,87 @@
 .guided-exercises-container {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background: #fdf9f3; /* Soft off-white background to match the theme */
-  color: #2d3436; /* Dark grey text for readability */
+  background: #ffffff; /* Main background white */
+  color: #2d3436; /* Dark grey text */
 }
 
 /* Header Section */
 .guided-header {
-  background: linear-gradient(to bottom, #a8edea, #fed6e3); /* Match the side-nav gradient */
-  color: #2d3436; /* Dark grey text for better contrast */
   text-align: center;
-  padding: 50px 20px; /* Increased padding for better spacing */
-  border-radius: 10px; /* Rounded corners for consistency */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  margin-bottom: 20px; /* Space below the header */
+  background: linear-gradient(to bottom, #a8edea, #fed6e3); /* Previous gradient */
+  color: #2d3436; /* Dark grey text */
+  padding: 40px 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .guided-header h1 {
-  font-size: 2.8rem; /* Slightly larger font size for prominence */
+  font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #34495e; /* Darker grey for emphasis */
 }
 
 .guided-header p {
   font-size: 1.2rem;
-  color: #636e72; /* Muted grey for secondary text */
 }
 
-/* Section Styles */
-section {
-  background: #ffffff; /* Clean white background for sections */
-  padding: 30px; /* Increased padding for more spacious layout */
-  margin: 20px 0;
-  border-radius: 10px; /* Rounded corners for a polished look */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  border: 1px solid #ececec; /* Light border for structure */
+/* Exercise Section */
+.exercises-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+  margin-top: 20px;
 }
 
-section h2 {
-  color: #0984e3; /* Bright blue for headings */
+.exercise-card {
+  background: linear-gradient(to bottom, #FFF9C4, #fed6e3);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.exercise-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.exercise-card h2 {
+  color: #2d3436; /* White for contrast */
   font-size: 1.8rem;
-  border-bottom: 2px solid #74b9ff; /* Accent underline for emphasis */
-  display: inline-block; /* Restrict underline to text width */
+  border-bottom: 2px solid #2d3436; /* Accent underline */
+  display: inline-block;
   padding-bottom: 5px;
   margin-bottom: 15px;
 }
 
-/* Ordered and Unordered Lists */
-ol,
-ul {
-  padding-left: 20px;
-  line-height: 1.6; /* Improved readability */
-  color: #2d3436; /* Consistent dark grey text */
-}
-
-li {
-  margin-bottom: 10px; /* Space between list items */
-}
-
-/* Buttons (Optional if applicable) */
-button {
-  background: #74b9ff; /* Soft blue background */
-  color: #ffffff; /* White text */
-  border: none;
-  padding: 10px 20px;
+.exercise-card p {
+  margin-bottom: 10px;
   font-size: 1rem;
-  border-radius: 5px; /* Rounded corners for modern look */
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  color: #2d3436; /* White for steps */
 }
 
-button:hover {
-  background: #00cec9; /* Teal hover background */
-  transform: scale(1.05); /* Slight scaling effect */
+.exercise-card ul {
+  padding-left: 20px;
+  line-height: 1.6;
+  color: #2d3436; /* Consistent white text */
+  text-align: left;
+}
+
+.exercise-card li {
+  margin-bottom: 8px;
+}
+
+/* Footer Section */
+.guided-footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #a8edea, #fed6e3); /* Consistent gradient with header */
+  color: #2d3436; /* Dark text */
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 30px;
 }
