@@ -1,99 +1,111 @@
-/* General styles */
+/* General Styles */
 .home-container {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #2d3436; /* Dark grey text for readability */
-  background: #fdf9f3; /* Soft off-white background */
+  color: #2d3436;
+  background: #fdf9f3;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Hero Section */
 header.hero-section {
-  background: linear-gradient(to bottom, #a8edea, #fed6e3); /* Pastel gradient */
-  color: #2d3436; /* Dark grey text for better contrast */
+  background: linear-gradient(to bottom, #a8edea, #fed6e3);
+  color: #2d3436;
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px; /* Increased padding for breathing space */
   border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for hero section */
+  margin-bottom: 30px; /* Larger margin for distinction */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly darker shadow */
 }
 
 header.hero-section h1 {
-  font-size: 2.8rem; /* Slightly larger for prominence */
-  margin-bottom: 10px;
-  color: #34495e; /* Darker grey for text focus */
+  font-size: 3rem; /* Increased for prominence */
+  margin-bottom: 15px; /* More spacing below the heading */
+  color: #2d3436;
 }
 
 header.hero-section p {
-  font-size: 1.2rem;
-  color: #636e72; /* Muted grey for subtitle */
+  font-size: 1.3rem;
+  color: #636e72;
 }
 
 /* Sections */
 section {
-  padding: 40px 20px;
-  margin-bottom: 20px;
-  background: #ffffff; /* Clean white background for content sections */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  padding: 50px 20px; /* More vertical padding */
+  margin-bottom: 25px;
+  background: #ffffff;
+  border-radius: 12px; /* Softer corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-  color: #2d3436; /* Dark grey for section headings */
-  border-bottom: 2px solid #00cec9; /* Accent underline for emphasis */
-  display: inline-block; /* Limit underline to text width */
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #2d3436;
+  border-bottom: 3px solid #00cec9; /* Thicker underline for emphasis */
+  display: inline-block;
 }
 
 /* Service Cards */
+.service-card-container {
+  display: flex;
+  justify-content: center; /* Centers the cards horizontally */
+  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px;
+}
+
 .service-card {
-  background: #f7f9fc; /* Soft blue-grey background for a calming effect */
-  padding: 20px;
-  margin: 10px 0;
-  border-radius: 12px; /* Slightly rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Deeper shadow for a floating effect */
+  background: #f7f9fc;
+  padding: 25px; /* Increased padding for comfort */
+  margin: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 600px; /* Consistent card size */
+  text-align: center; /* Centered content */
 }
 
 .service-card:hover {
-  transform: translateY(-5px); /* Lift effect */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: translateY(-7px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .service-card h3 {
-  margin-bottom: 10px;
-  color: #0984e3; /* Bright blue for titles */
-  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #0984e3;
+  font-size: 1.6rem;
 }
 
 .service-card p {
-  color: #636e72; /* Muted grey for descriptions */
+  color: #636e72;
 }
 
 /* Footer */
 footer.footer-section {
   text-align: center;
-  padding: 20px;
-  background: #2d3436; /* Dark grey */
-  color: #ffffff; /* White text for contrast */
-  border-radius: 10px; /* Rounded edges for footer */
-  margin-top: 20px;
+  padding: 25px;
+  background: #2d3436;
+  color: #ffffff;
+  border-radius: 12px;
+  margin-top: 30px;
 }
 
 footer.footer-section a {
-  color: #74b9ff; /* Soft blue links */
+  color: #74b9ff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-weight: bold; /* Slight emphasis on links */
+  transition: color 0.3s ease, transform 0.2s ease; /* Added scale effect */
 }
 
 footer.footer-section a:hover {
-  color: #00cec9; /* Teal on hover */
+  color: #00cec9;
+  transform: scale(1.1); /* Subtle scaling effect */
 }
 
-/* Smooth scroll effect */
+/* Smooth Scroll Effect */
 html {
   scroll-behavior: smooth;
 }

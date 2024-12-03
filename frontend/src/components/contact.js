@@ -4,10 +4,39 @@ import "./contact.css";
 const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormSubmitted(true);
+  
+    // Prepare the form data
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
+    };
+  
+    try {
+      // Send the form data to the backend
+      const response = await fetch(`http://localhost:5000/contact-us`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        setFormSubmitted(true);
+      } else {
+        const errorData = await response.json();
+        console.error("Error submitting form:", errorData.error);
+        alert("There was an issue submitting the form. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("There was an issue submitting the form. Please try again.");
+    }
   };
+  
 
   return (
     <div className="contact-container" role="form" aria-labelledby="contact-header">

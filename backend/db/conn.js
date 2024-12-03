@@ -18,10 +18,10 @@ module.exports = {
         async function run() {
             try {
                 await client.connect();
-                await client.db("admin").command({ ping: 1 });
+                await client.db("Health").command({ ping: 1 });
                 console.log("Pinged your deployment. You successfully connected to MongoDB!");
-                _db = client.db('bank');
-                console.log('Connected to student database');
+                _db = client.db('Health');
+                console.log('Connected to database');
                 callback();
             } catch (err) {
                 console.error(err);
