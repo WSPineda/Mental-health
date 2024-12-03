@@ -13,9 +13,9 @@ const ExampleHelpWebsite = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="example-link-button"
-        aria-label="Visit the Example Help Website"
+        aria-label="Visit the Help Website"
       >
-        Visit Example Help Website
+        Visit Help Website
       </a>
     </div>
   );
