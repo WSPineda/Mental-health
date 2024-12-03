@@ -3,10 +3,8 @@
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #2d3436;
-  background: #fdf9f3;
+  background: #ffffff; /* Changed to white background */
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Hero Section */
@@ -14,16 +12,15 @@ header.hero-section {
   background: linear-gradient(to bottom, #a8edea, #fed6e3);
   color: #2d3436;
   text-align: center;
-  padding: 60px 20px; /* Increased padding for breathing space */
+  padding: 60px 20px;
   border-radius: 10px;
-  margin-bottom: 30px; /* Larger margin for distinction */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly darker shadow */
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 header.hero-section h1 {
-  font-size: 3rem; /* Increased for prominence */
-  margin-bottom: 15px; /* More spacing below the heading */
-  color: #2d3436;
+  font-size: 3rem;
+  margin-bottom: 15px;
 }
 
 header.hero-section p {
@@ -33,111 +30,91 @@ header.hero-section p {
 
 /* About Section */
 .about-section {
-  background: linear-gradient(to bottom, #FFF9C4, #fed6e3); /* Same pastel gradient as service cards */
-  color: #2d3436; /* Dark grey text for readability */
+  background: linear-gradient(to bottom, #a8edea, #fed6e3);
+  color: #2d3436;
   padding: 40px 20px;
-  border-radius: 12px; /* Rounded corners for a modern look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  text-align: center; /* Center aligns text */
-  margin-bottom: 40px; /* Space below the section */
-  font-family: 'Arial', sans-serif; /* Same font as other sections */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .about-section h2 {
-  font-size: 2.5rem; /* Match the service section heading size */
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #2d3436; /* Darker grey for heading */
-  font-weight: 700; /* Bold for sharpness */
-  letter-spacing: 1px; /* Slight spacing for readability */
-  text-transform: uppercase; /* Optional: Makes text all uppercase */
+  color: #2d3436;
+  font-weight: 700;
 }
 
 .about-section p {
-  font-size: 1.1rem; /* Match the service card description font size */
-  color: #636e72; /* Muted grey for text */
-  line-height: 1.6; /* Better readability */
+  font-size: 1.1rem;
+  color: #636e72;
+  line-height: 1.6;
 }
 
-/* Background for the entire section */
+/* Services Section */
 .services-section {
-  text-align: center; /* Center aligns the heading */
+  text-align: center;
   margin-bottom: 40px;
-  padding: 40px 0; /* Add padding around the section */
-  background: linear-gradient(to bottom, #a8edea, #fed6e3); /* Previous card gradient */
+  padding: 40px 0;
+  background: linear-gradient(to bottom, #a8edea, #fed6e3);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Services Section Heading */
 .services-section h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #2d3436; /* Darker grey for the heading */
+  color: #2d3436;
 }
 
-/* Container for cards */
 .services-section-container {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping to new rows */
-  gap: 20px; /* Space between cards */
-  justify-content: center; /* Centers cards */
-}
-
-/* Service Cards */
-.service-card-container {
-  display: flex;
-  justify-content: center; /* Centers the cards horizontally */
-  flex-wrap: wrap; /* Ensures responsiveness */
-  gap: 20px; /* Space between cards */
-  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 25px; /* Adjusted for spacing */
+  justify-content: center;
 }
 
 .service-card {
-  background: linear-gradient(to bottom, #FFF9C4, #fed6e3); /* New pastel gradient for contrast */
-  color: #2d3436; /* Dark grey text for readability */
+  background: linear-gradient(to bottom, #FFF9C4, #fed6e3);
+  color: #2d3436;
   padding: 20px;
-  border-radius: 12px; /* Rounded edges for a modern look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 300px; /* Uniform size */
-  height: 300px; /* Matches width */
+  border-radius: 15px; /* Circular edges */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  width: 300px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; /* Centers content */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card h3 {
   margin-bottom: 10px;
   font-size: 1.6rem;
-  color: #2d3436; /* Dark grey for headings */
+  color: #2d3436;
 }
 
 .service-card p {
-  color: #636e72; /* Muted grey for descriptions */
+  color: #636e72;
   font-size: 1.1rem;
 }
 
 .service-card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
+/* Footer Section */
 footer.footer-section {
   text-align: center;
   padding: 20px;
-  background: linear-gradient(to bottom, #a8edea, #fed6e3); /* Pastel gradient */
-  color: #2d3436; /* Dark text for contrast */
-  font-size: 16px; /* Ensure proper font size */
-  font-weight: 700; /* Bold text for sharpness */
-  font-family: 'Arial', sans-serif; /* Clean and sharp font */
-  border-radius: 10px; /* Rounded edges for footer */
+  background: linear-gradient(to bottom, #a8edea, #fed6e3);
+  color: #2d3436;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
   margin-top: 20px;
-  text-transform: uppercase; /* Optional: Makes text all uppercase for extra sharpness */
-  letter-spacing: 1px; /* Adds a slight spacing for readability */
-}
-
-/* Smooth Scroll Effect */
-html {
-  scroll-behavior: smooth;
 }

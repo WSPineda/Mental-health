@@ -25,17 +25,11 @@ const Home = () => {
           confidence and resilience.
         </p>
         <p>
-          We are proud to offer a wide range of services, including one-on-one counseling sessions, expertly curated
-          self-help resources, and group support programs that foster a sense of belonging and shared understanding.
-          Our goal is to create a safe and welcoming space where individuals can grow, heal, and thrive.
-        </p>
-        <p>
           At the heart of everything we do is a deep commitment to promoting mental health awareness, reducing stigma,
           and building a more compassionate world. Together, we can break the barriers that prevent individuals from
           seeking help and create a brighter future for everyone.
         </p>
       </section>
-
 
       <section className="services-section">
         <h2>Our Services</h2>
