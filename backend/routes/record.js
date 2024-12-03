@@ -11,10 +11,10 @@ const ObjectId = require("mongodb").ObjectId;
  **********************************************************************/
 recordRoutes.route("/contact-us").post(async (req, res) => {
   try {
-    const { name, email, message } = req.body;
+    const { firstName,lastName, email, message, phone } = req.body;
 
     // Validate the input
-    if (!name || !email || !message) {
+    if (!firstName || !lastName || !email || !phone || !message) {
       return res.status(400).json({ error: "All fields are required." });
     }
 
@@ -23,9 +23,11 @@ recordRoutes.route("/contact-us").post(async (req, res) => {
 
     // Insert the contact information into the "contacts" collection
     const result = await dbConnect.collection("Contact").insertOne({
-      name,
+      firstName,
+      lastName,
       email,
       message,
+      phone,
       submittedAt: new Date(),
     });
 
@@ -65,7 +67,7 @@ recordRoutes.route("/donations").post(async (req, res) => {
   
 
   /*********************************************************************
- *                       Grab Donations Total
+ *                         Grab Donations Total
  **********************************************************************/
   // Route to fetch total donations
   recordRoutes.route("/donations/total").get(async (req, res) => {

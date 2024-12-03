@@ -44,7 +44,7 @@ const SideNav = () => {
               isActive ? 'side-navbar-link active' : 'side-navbar-link'
             }
           >
-            Example Help Website
+            Help Website
           </NavLink>
         </li>
       </ul>

@@ -9,8 +9,11 @@ const Contact = () => {
   
     // Prepare the form data
     const formData = {
+      firstName: e.target.firstName.value,
+      lastName: e.target.lastName.value,
       name: e.target.name.value,
       email: e.target.email.value,
+      phone: e.target.phone.value,
       message: e.target.message.value,
     };
   

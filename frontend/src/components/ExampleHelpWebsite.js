@@ -4,7 +4,7 @@ import './ExampleHelpWebsite.css';
 const ExampleHelpWebsite = () => {
   return (
     <div className="example-help-container">
-      <h1>Example Help Website</h1>
+      <h1>Help Website</h1>
       <p>
         Explore additional resources and support options on our example help website. Discover tools and information to assist you during challenging times.
       </p>
